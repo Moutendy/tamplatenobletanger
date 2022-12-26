@@ -2,15 +2,15 @@
   <div class="col-md-8 col-xl-6 mx-auto">
     <div class="card">
       <div class="row">
-        <div class="col-md-4 pr-md-0">
-          <div class="auth-left-wrapper">
-
+        <div class="col-md-4 pr-md-0" >
+          <div class="auth-left-wrapper" style="display: flex; justify-content: center; align-items: center; background-image: none !important;">
+            <img src="../../../../../assets/images/ugmlogo.png" width="60%" height="25%"/>
           </div>
         </div>
         <div class="col-md-8 pl-md-0">
           <div class="auth-form-wrapper px-4 py-5">
-            <a routerLink="." class="noble-ui-logo d-block mb-2">Noble<span>UI</span></a>
-            <h5 class="text-muted font-weight-normal mb-4">Welcome back! Log in to your account.</h5>
+            <a routerLink="." class="noble-ui-logo d-block mb-2">UGM<span>Administration</span></a>
+            <h5 class="text-muted font-weight-normal mb-4">Content de te revoir! Connectez-vous à votre compte.</h5>
             <form class="forms-sample">
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -30,11 +30,11 @@
               <div class="mt-3">
                 <button type="submit" class="btn btn-primary mr-2 mb-2 mb-md-0" (click)="onLoggedin($event)">Login</button>
                 <button type="button" class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
-                  <i class="feather icon-twitter btn-icon-prepend"></i>
-                  Login with twitter
+                  <i class="feather icon-facebook btn-icon-prepend"></i>
+
                 </button>
               </div>
-              <a routerLink="/auth/register" class="d-block mt-3 text-muted">Not a user? Sign up</a>
+              <a routerLink="/auth/register" class="d-block mt-3 text-muted">Vous n'êtes pas utilisateur ? S'inscrire</a>
             </form>
           </div>
         </div>

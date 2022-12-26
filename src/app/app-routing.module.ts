@@ -16,12 +16,16 @@ const routes: Routes = [
     component: BaseComponent,
     canActivate: [AuthGuard],
     children: [
-      
+
       {
         path: 'dashboard',
         loadChildren: () => import('./views/pages/dashboard/dashboard.module').then(m => m.DashboardModule)
       },
-     
+
+      {
+        path: 'users',
+        loadChildren: () => import('./views/pages/users/users.module').then(m => m.UsersModule)
+      },
       {
         path: 'apps',
         loadChildren: () => import('./views/pages/apps/apps.module').then(m => m.AppsModule)
@@ -50,7 +54,7 @@ const routes: Routes = [
         path: 'tables',
         loadChildren: () => import('./views/pages/tables/tables.module').then(m => m.TablesModule)
       },
-    
+
       {
         path: 'icons',
         loadChildren: () => import('./views/pages/icons/icons.module').then(m => m.IconsModule)
@@ -59,11 +63,11 @@ const routes: Routes = [
         path: 'general',
         loadChildren: () => import('./views/pages/general/general.module').then(m => m.GeneralModule)
       },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' }, 
+      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       // { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
     ]
   },
-  { 
+  {
     path: 'error',
     component: ErrorPageComponent,
     data: {

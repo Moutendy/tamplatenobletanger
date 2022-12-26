@@ -1,42 +1,83 @@
 import { MenuItem } from './menu.model';
 
 export const MENU: MenuItem[] = [
- 
+
   {
-    label: 'Employées',
-    icon: 'unlock',
+    label: 'Actualite',
+    icon: 'globe',
     subItems: [
       {
-        label: 'Login',
-        link: '/auth/login',
+        label: 'actu',
+        link: '/',
       },
-     
-    
+
+
     ]
   },
   {
-    label: 'Administrateur',
-    icon: 'unlock',
+    label: 'Appartement',
+    icon: 'home',
     subItems: [
       {
         label: 'Login',
         link: '/auth/login',
       },
-     
-    
+
+
     ]
   },
 
   {
-    label: 'Direction',
+    label: 'Utilisateur',
+    icon: 'users',
+    subItems: [
+      {
+        label: 'users',
+        link: '/users',
+      },
+
+
+    ]
+  },
+
+  {
+    label: 'Icons',
     icon: 'unlock',
     subItems: [
       {
         label: 'Login',
+        link: '/icons',
+      },
+
+
+    ]
+  },
+
+  {
+    label: 'General',
+    icon: 'unlock',
+    subItems: [
+      {
+        label: 'Login',
+        link: '/tables',
+      },
+
+
+    ]
+  },
+
+
+
+  {
+    label: 'Deconnexion',
+    icon: 'log-in',
+    subItems: [
+      {
+        label: 'Deconnexion',
         link: '/auth/login',
       },
-     
-    
+
+
     ]
   },
 
