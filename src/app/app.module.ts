@@ -13,6 +13,7 @@ import { ErrorPageComponent } from './views/pages/error-page/error-page.componen
 import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { HomeComponentComponent } from './views/pages/home-component/home-component.component';
 import { UsersComponent } from './views/pages/users/users.component';
+import { AppartementComponent } from './views/pages/appartement/appartement.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { UsersComponent } from './views/pages/users/users.component';
     ErrorPageComponent,
     HomeComponentComponent,
     UsersComponent,
+    AppartementComponent,
     
   ],
   imports: [

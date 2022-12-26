@@ -19,8 +19,8 @@ export const MENU: MenuItem[] = [
     icon: 'home',
     subItems: [
       {
-        label: 'Login',
-        link: '/auth/login',
+        label: 'Appartements',
+        link: '/appartements',
       },
 
 
