@@ -10,7 +10,10 @@ export const MENU: MenuItem[] = [
         label: 'actu',
         link: '/',
       },
-
+      {
+        label: 'ajouter Actualite',
+        link: '/dashboard/ajouterpost',
+      },
 
     ]
   },
@@ -21,6 +24,11 @@ export const MENU: MenuItem[] = [
       {
         label: 'Appartements',
         link: '/appartements',
+      },
+
+      {
+        label: 'ajouter Appartement',
+        link: '/appartements/ajouterappartement',
       },
 
 

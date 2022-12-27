@@ -14,6 +14,8 @@ import { HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { HomeComponentComponent } from './views/pages/home-component/home-component.component';
 import { UsersComponent } from './views/pages/users/users.component';
 import { AppartementComponent } from './views/pages/appartement/appartement.component';
+import { AjouterpostComponent } from './views/pages/ajouterpost/ajouterpost.component';
+import { AjouterappartementComponent } from './views/pages/ajouterappartement/ajouterappartement.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { AppartementComponent } from './views/pages/appartement/appartement.comp
     HomeComponentComponent,
     UsersComponent,
     AppartementComponent,
+    AjouterpostComponent,
+    AjouterappartementComponent,
     
   ],
   imports: [

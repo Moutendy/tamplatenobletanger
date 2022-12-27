@@ -13,12 +13,19 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { ChartsModule } from 'ng2-charts';
 
 import { DashboardComponent } from './dashboard.component';
+import { AjouterpostComponent } from '../ajouterpost/ajouterpost.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent
-  }
+    component: DashboardComponent,
+
+  },
+    {
+      path:'ajouterpost',
+      component: AjouterpostComponent,
+    }
+
 ]
 
 @NgModule({
