@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import Swal from 'sweetalert2';
 import { UpdatepostComponent } from './updatepost/updatepost.component';
 
 @Component({
@@ -32,5 +33,37 @@ export class AjouterpostComponent implements OnInit {
       let fileName = event.target.files[0].name;
       element.setAttribute( 'value', fileName)
     }
+  }
+
+
+  ajouterpost()
+  {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Actualiter Ajouter Admin',
+      showConfirmButton: true,
+      timer: 5000
+    })
+  }
+  deletepost()
+  {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
   }
 }

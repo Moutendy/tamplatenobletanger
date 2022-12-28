@@ -2,9 +2,13 @@
   <div class="sidebar-header">
 
     <!--- Logo -->
+    <div class="row" style="display: flex; justify-content: center; align-items: center; background-image: none !important;">
+      <!-- <img src="../../../../../assets/images/ugmlogo.png" width="35%" height="15%" /> -->
     <a routerLink="/" class="sidebar-brand">
-      UGM<span></span>
+      UGM
+      <span></span>
     </a>
+  </div>
 
     <!--- Toggler -->
     <div class="sidebar-toggler not-active" #sidebarToggler (click)="toggleSidebar($event)">

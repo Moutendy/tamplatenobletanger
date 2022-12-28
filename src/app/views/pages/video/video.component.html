@@ -1,0 +1,63 @@
+
+
+
+<div class="col-md-8 col-xl-6 middle-wrapper appartement" style="display: flex; justify-content: center; align-items: center; background-image: none !important;">
+  <div class="row">
+      <div class="col-md-12 grid-margin">
+          <div class="card rounded">
+              <div class="card-header">
+                  <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                          <img class="img-xs rounded-circle" src="../../../../assets/images/team-4.jpg" alt=" ">
+                          <div class="ml-2 ">
+                              <p>Mike Popescu</p>
+                              <p class="tx-11 text-muted ">1 min ago</p>
+                          </div>
+                      </div>
+                      <div ngbDropdown>
+                          <button class="btn p-0 no-dropdown-toggle-icon " type="button " id="dropdownMenuButton2 " ngbDropdownToggle>
+        <i class="icon-lg pb-3px " data-feather="more-horizontal " appFeatherIcon></i>
+      </button>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="card-body ">
+
+                  <img class="img-fluid " src="../../../../assets/images/team-2.jpg" alt=" ">
+              </div>
+
+
+          </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-title">Ajouter une Video</h6>
+        <form>
+
+
+          <div class="form-group">
+            <label>video</label>
+            <input (change)="handleFileInput($event)" type="file" name="img[]" class="file-upload-default" id="fileUploadInputExample">
+            <div class="input-group col-xs-12" (click)="openFileBrowser($event)">
+              <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Video">
+              <span class="input-group-append">
+                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+              </span>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Ajouter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+

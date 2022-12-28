@@ -48,18 +48,18 @@ export const MENU: MenuItem[] = [
     ]
   },
 
-  // {
-  //   label: 'Icons',
-  //   icon: 'unlock',
-  //   subItems: [
-  //     {
-  //       label: 'Login',
-  //       link: '/icons',
-  //     },
+  {
+    label: 'Films',
+    icon: 'film',
+    subItems: [
+      {
+        label: 'ciné',
+        link: '/video',
+      },
 
 
-  //   ]
-  // },
+    ]
+  },
 
   // {
   //   label: 'General',

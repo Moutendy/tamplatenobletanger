@@ -23,6 +23,10 @@ const routes: Routes = [
       },
 
       {
+        path: 'video',
+        loadChildren: () => import('./views/pages/video/video.module').then(m => m.VideoModule)
+      },
+      {
         path: 'users',
         loadChildren: () => import('./views/pages/users/users.module').then(m => m.UsersModule)
       },

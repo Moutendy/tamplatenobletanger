@@ -19,6 +19,7 @@ import { AjouterappartementComponent } from './views/pages/ajouterappartement/aj
 import { UpdatepostComponent } from './views/pages/ajouterpost/updatepost/updatepost.component';
 import { UpdateappartementComponent } from './views/pages/ajouterappartement/updateappartement/updateappartement.component';
 import { ImageComponent } from './views/pages/ajouterappartement/image/image.component';
+import { VideoComponent } from './views/pages/video/video.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ImageComponent } from './views/pages/ajouterappartement/image/image.com
     UpdatepostComponent,
     UpdateappartementComponent,
     ImageComponent,
+    VideoComponent,
 
   ],
   imports: [

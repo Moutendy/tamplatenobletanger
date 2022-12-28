@@ -26,7 +26,7 @@
 
 
                               <td><button type="submit" class="btn btn-primary mr-2" (click)="openScrollableModal()">modifier</button></td>
-                              <td><button class="btn btn-light">delete</button></td>
+                              <td><button class="btn btn-light" (click)="deletepost()">delete</button></td>
                           </tr>
 
                       </tbody>
@@ -79,7 +79,7 @@
               </span>
             </div>
           </div>
-          <button class="btn btn-primary" type="submit">Ajouter</button>
+          <button class="btn btn-primary" (click)="ajouterpost()" >Ajouter</button>
         </form>
       </div>
     </div>
