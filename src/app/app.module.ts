@@ -16,6 +16,9 @@ import { UsersComponent } from './views/pages/users/users.component';
 import { AppartementComponent } from './views/pages/appartement/appartement.component';
 import { AjouterpostComponent } from './views/pages/ajouterpost/ajouterpost.component';
 import { AjouterappartementComponent } from './views/pages/ajouterappartement/ajouterappartement.component';
+import { UpdatepostComponent } from './views/pages/ajouterpost/updatepost/updatepost.component';
+import { UpdateappartementComponent } from './views/pages/ajouterappartement/updateappartement/updateappartement.component';
+import { ImageComponent } from './views/pages/ajouterappartement/image/image.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { AjouterappartementComponent } from './views/pages/ajouterappartement/aj
     AppartementComponent,
     AjouterpostComponent,
     AjouterappartementComponent,
-    
+    UpdatepostComponent,
+    UpdateappartementComponent,
+    ImageComponent,
+
   ],
   imports: [
     BrowserModule,

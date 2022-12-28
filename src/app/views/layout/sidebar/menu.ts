@@ -48,31 +48,31 @@ export const MENU: MenuItem[] = [
     ]
   },
 
-  {
-    label: 'Icons',
-    icon: 'unlock',
-    subItems: [
-      {
-        label: 'Login',
-        link: '/icons',
-      },
+  // {
+  //   label: 'Icons',
+  //   icon: 'unlock',
+  //   subItems: [
+  //     {
+  //       label: 'Login',
+  //       link: '/icons',
+  //     },
 
 
-    ]
-  },
+  //   ]
+  // },
 
-  {
-    label: 'General',
-    icon: 'unlock',
-    subItems: [
-      {
-        label: 'Login',
-        link: '/tables',
-      },
+  // {
+  //   label: 'General',
+  //   icon: 'unlock',
+  //   subItems: [
+  //     {
+  //       label: 'Login',
+  //       link: '/tables',
+  //     },
 
 
-    ]
-  },
+  //   ]
+  // },
 
 
 

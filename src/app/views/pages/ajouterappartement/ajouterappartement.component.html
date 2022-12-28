@@ -14,6 +14,7 @@
                               <th>ville</th>
                               <th>Description</th>
                               <th>prix</th>
+                              <th>image</th>
                               <th>update</th>
                               <th>delete</th>
                           </tr>
@@ -27,7 +28,8 @@
                               <td>rabat</td>
                               <td>de l’Emploi et des Compétences à</td>
                                <td>2500 dh</td>
-                              <td><button type="submit" class="btn btn-primary mr-2">modifier</button></td>
+                               <td><button type="submit" class="btn btn-primary mr-2" (click)="image()">images</button></td>
+                              <td><button type="submit" class="btn btn-primary mr-2" (click)="updateappartment()">modifier</button></td>
                               <td><button class="btn btn-light">delete</button></td>
                           </tr>
                       </tbody>
@@ -53,12 +55,18 @@
             <label for="exampleInputText1">Ville</label>
             <input type="text" class="form-control" id="exampleInputText1" value="Amiah Burton" placeholder="Enter Name">
           </div> -->
-          <!-- <div class="form-group">
-            <label for="exampleInputEmail3">Email Input</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" value="amiahburton@gmail.com" placeholder="Enter Email">
-          </div> -->
+          <div class="form-group">
+            <label for="exampleInputEmail3">Ville</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected disabled>Selection la ville</option>
+              <option>Rabat</option>
 
+            </select>          </div>
 
+            <div class="form-group">
+              <label for="exampleInputReadonly">Prix</label>
+              <input type="text" class="form-control" id="exampleInputReadonly" readonly value="2500">
+            </div>
 
 
 

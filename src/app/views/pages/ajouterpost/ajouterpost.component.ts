@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { UpdatepostComponent } from './updatepost/updatepost.component';
 
 @Component({
   selector: 'app-ajouterpost',
@@ -7,10 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AjouterpostComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
   }
+
+  openScrollableModal() {
+    this.modalService.open(UpdatepostComponent, {scrollable: true}).result.then((result) => {
+      console.log("Modal closed" + result);
+    }).catch((res) => {});
+  }
+
   openFileBrowser(event: any) {
     event.preventDefault();
     let element: HTMLElement = document.querySelector("#fileUploadInputExample") as HTMLElement;
