@@ -27,8 +27,13 @@ export const MENU: MenuItem[] = [
       },
 
       {
-        label: 'ajouter Appartement',
+        label: 'Ajouter Appartement',
         link: '/appartements/ajouterappartement',
+      },
+
+      {
+        label: 'Ville',
+        link: '/appartements/ville',
       },
 
 
@@ -42,6 +47,10 @@ export const MENU: MenuItem[] = [
       {
         label: 'users',
         link: '/users',
+      },
+      {
+        label: 'visiteur',
+        link: '/users/visiteur',
       },
 
 
